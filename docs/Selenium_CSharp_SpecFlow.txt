@@ -1,0 +1,31 @@
+TESTES WEB - Selenium com C# - SpecFlow: BDD / Gherkin / Cucumber
+
+
+No VSCode, criar o novo projeto
+- open folder, selecionar pasta... etc
+- .feature (descrição/ critério de aceite)
+- .cs (passos da automação)
+
+No terminal, digitar
+1- framework de teste unitário
+dotnet new nunit
+
+2- Selenium
+CTRL+SHIFT + P >> nuget >> NuGet Package Manager - Add Pakage >> Selenium >> selecionar versão
+
+3- WebDriverManager (controlador do driver)
+CTRL+SHIFT + P >> NuGet Package Manager: Add Pakage >> WebDriverManager >> selecionar versão
+
+4- SpecFlow (Cucumber para C#) pelo terminal, digitar
+dotnet add package SpecFlow.NUnit
+
+5- Plugin SpecFlow
+dotnet add package SpecFlow.Plus.LivingDocPlugin
+
+6- Relatório e sinalização/documentação SpecFlow (uso do BDD)
+
+Depois de fazer o arquivo .feature com o BDD, executar no terminal o comando
+dotnet test @Compra -v n
+
+Github
+Criação dos arquivos .feature e .step

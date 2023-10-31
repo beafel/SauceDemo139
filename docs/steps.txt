@@ -1,0 +1,164 @@
+no terminal, digitar: dotnet test @Compra -v n
+
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"que acesso a pagina inicial do site")]
+        public void GivenQueAcessoAPaginaInicialDoSite()
+        {
+            _scenarioContext.Pending();
+        }
+
+        [When(@"preencho o usuario como ""(.*)""")]
+        public void WhenPreenchoOUsuarioComo(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+        [When(@"a senha ""(.*)"" e clico no botão Login")]
+        public void WhenASenhaEClicoNoBotaoLogin(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+        [When(@"adiciono o produto ""(.*)"" ao carrinho")]
+        public void WhenAdicionoOProdutoAoCarrinho(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+        [When(@"clico no icone do carrinho de compras")]
+        public void WhenClicoNoIconeDoCarrinhoDeCompras()
+        {
+            _scenarioContext.Pending();
+        }
+
+        [Then(@"exibe ""(.*)"" no titulo da secao")]
+        public void ThenExibeNoTituloDaSecao(string products0)
+        {
+            _scenarioContext.Pending();
+        }
+
+        [Then(@"verifico o titulo da secao ""(.*)""")]
+        public void ThenVerificoOTituloDaSecao(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+        [Then(@"a quantidade ""(.*)""")]
+        public void ThenAQuantidade(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+        [Then(@"o produto ""(.*)""")]
+        public void ThenOProduto(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+        [Then(@"o valor ""(.*)""")]
+        public void ThenOValor(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+
+
+OU
+
+
+dotnet test @Compra
+
+Given que acesso a pagina inicial do site
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"que acesso a pagina inicial do site")]
+        public void GivenQueAcessoAPaginaInicialDoSite()
+        {
+            _scenarioContext.Pending();
+        }
+
+When preencho o usuario como "standard_user"
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"preencho o usuario como ""(.*)""")]
+        public void WhenPreenchoOUsuarioComo(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And a senha "sauce_secret" e clico no botão Login
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"a senha ""(.*)"" e clico no botão Login")]
+        public void WhenASenhaEClicoNoBotaoLogin(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then exibe "Products" no titulo da secao
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"exibe ""(.*)"" no titulo da secao")]
+        public void ThenExibeNoTituloDaSecao(string products)
+        {
+            _scenarioContext.Pending();
+        }
+
+When adiciono o produto "Sauce Labs Backpack" ao carrinho
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"adiciono o produto ""(.*)"" ao carrinho")]
+        public void WhenAdicionoOProdutoAoCarrinho(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And clico no icone do carrinho de compras
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"clico no icone do carrinho de compras")]
+        public void WhenClicoNoIconeDoCarrinhoDeCompras()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then verifico o titulo da secao "Your Cart"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"verifico o titulo da secao ""(.*)""")]
+        public void ThenVerificoOTituloDaSecao(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And a quantidade "1"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"a quantidade ""(.*)""")]
+        public void ThenAQuantidade(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And o produto "Sauce Labs Backpack"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"o produto ""(.*)""")]
+        public void ThenOProduto(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And o valor "$29.99"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"o valor ""(.*)""")]
+        public void ThenOValor(string p0)
+        {
+            _scenarioContext.Pending();
+        }
